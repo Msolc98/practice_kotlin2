@@ -1,7 +1,7 @@
 fun main() {
     var test = Solution()
-    println(test.solution(intArrayOf(1,2,3)))
-    println(test.solution2(intArrayOf(1,2,3)))
+//    println(test.solution(intArrayOf(1,2,3)))
+//    println(test.solution2(intArrayOf(5,5)))
 }
 
 
@@ -24,7 +24,8 @@ class Solution{
         arr.forEach {
                 i -> answer += i
             if (i == arr[arr.size-1]) {
-                answer /= arr.size
+                println(answer)
+                answer = answer / arr.size
             }
         }
         return answer
