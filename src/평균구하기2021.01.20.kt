@@ -1,6 +1,7 @@
 fun main() {
     var test = Solution()
     println(test.solution(intArrayOf(1,2,3)))
+    println(test.solution2(intArrayOf(1,2,3)))
 }
 
 
@@ -14,6 +15,17 @@ class Solution{
                 if (i == arr[arr.size-1]) {
                     answer = sum / arr.size
                 }
+        }
+        return answer
+    }
+
+    fun solution2(arr:IntArray):Double{
+        var answer:Double = 0.0
+        arr.forEach {
+                i -> answer += i
+            if (i == arr[arr.size-1]) {
+                answer /= arr.size
+            }
         }
         return answer
     }
