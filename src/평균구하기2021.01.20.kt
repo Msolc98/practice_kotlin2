@@ -21,9 +21,7 @@ class Solution{
 
     fun solution2(arr:IntArray):Double{
         var answer:Double = 0.0
-        arr.forEach {
-                i -> answer += i
-        }
+        arr.forEach { i -> answer += i }
         return answer / arr.size
     }
 }
