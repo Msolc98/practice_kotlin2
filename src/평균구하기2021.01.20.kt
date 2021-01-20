@@ -24,4 +24,12 @@ class Solution{
         arr.forEach { i -> answer += i }
         return answer / arr.size
     }
+
+    fun answer(arr: IntArray): Double
+    {
+        return arr.average()
+    }
+
+    fun answer2(arr: IntArray): Double = arr.average()
+
 }
