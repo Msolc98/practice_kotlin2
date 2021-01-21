@@ -12,8 +12,6 @@ class Solution21Second{
         else if(a<b) for(i in a..b) answer += i
         else for(i in b..a) answer += i
 
-        Integer.MIN_VALUE
-
         return answer
     }
 }
