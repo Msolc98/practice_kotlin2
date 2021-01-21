@@ -7,6 +7,12 @@ fun main() {
 
 class Solution{
 
+    fun solution2(arr:IntArray):Double{
+        var answer:Double = 0.0
+        arr.forEach { i -> answer += i }
+        return answer / arr.size
+    }
+
     fun solution(arr:IntArray):Double{
         var sum:Double = 0.0
         var answer:Double = 0.0
@@ -17,12 +23,6 @@ class Solution{
                 }
         }
         return answer
-    }
-
-    fun solution2(arr:IntArray):Double{
-        var answer:Double = 0.0
-        arr.forEach { i -> answer += i }
-        return answer / arr.size
     }
 
     fun answer(arr: IntArray): Double
