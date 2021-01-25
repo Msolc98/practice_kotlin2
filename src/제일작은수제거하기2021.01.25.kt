@@ -1,8 +1,5 @@
 fun main() {
     var test = Solution25first()
-    var tmp = intArrayOf(1,2,3)
-    //println(tmp.minOrNull())
-
     println(test.solution(intArrayOf(4,3,2,5,6,7)))
 }
 
@@ -23,16 +20,14 @@ class Solution25first{
 
 
             if(min_index !== arr.lastIndex) {
-                for (i in min_index..arr.lastIndex - 1) {
-                    println(arr)
-
+                for (i in min_index..(arr.lastIndex - 1)) {
                     arr[i] = arr[i + 1]
                 }
 
-                return arr.copyOfRange(0,arr.lastIndex-1)
+                return arr.sliceArray(IntRange(0,arr.lastIndex-1))
             }
             else
-                return arr.copyOfRange(0,arr.lastIndex-1)
+                return arr.sliceArray(IntRange(0,arr.lastIndex-1))
 
         }
 
