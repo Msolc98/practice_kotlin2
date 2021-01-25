@@ -1,5 +1,8 @@
 fun main() {
     var test = Solution25first()
+    var tmp = intArrayOf(1,2,3)
+    //println(tmp.minOrNull())
+
     println(test.solution(intArrayOf(4,3,2,5,6,7)))
 }
 
