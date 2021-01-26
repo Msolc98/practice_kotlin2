@@ -8,8 +8,12 @@ fun main() {
 class solution26second{
     fun solution(n: Int): Int {
         var answer = 0
+        var num = n
 
-        println("Hello Kotlin")
+        while(num != 0){
+            answer += num % 10
+            num /= 10
+        }
 
         return answer
     }
