@@ -1,3 +1,5 @@
+package twozerotwoone_one
+
 fun main() {
     var test = Solution()
     println(test.solution(intArrayOf(1,2,3)))

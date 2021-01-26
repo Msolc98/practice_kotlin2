@@ -1,3 +1,5 @@
+package twozerotwoone_one
+
 fun main() {
     var test = Solution21Second()
     println(test.solution(10,1))
