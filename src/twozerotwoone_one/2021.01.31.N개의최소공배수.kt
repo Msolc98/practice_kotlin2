@@ -10,8 +10,10 @@ class solution31first{
 
         if(arr.size==1)
             return arr[0]
-        else
-
+        else{
+            arr.forEach { i ->  }
+        }
+            
         return answer
     }
 }
