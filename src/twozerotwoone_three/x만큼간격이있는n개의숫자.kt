@@ -2,8 +2,8 @@ package twozerotwoone_three
 
 fun main(){
     var test = Solution23first()
-    println(test.solution(2,5))
-    print(Int.MIN_VALUE)
+    println(test.solution(4,3))
+
 
 }
 
