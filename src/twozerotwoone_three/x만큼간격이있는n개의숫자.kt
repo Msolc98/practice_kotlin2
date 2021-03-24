@@ -9,8 +9,8 @@ fun main(){
 
 class Solution23first {
 
-    fun solution(x: Long, n: Int): MutableList<Long> {
-        var answer:MutableList<Long> = mutableListOf(x)
+    fun solution(x: Int, n: Int): MutableList<Long> {
+        var answer:MutableList<Long> = mutableListOf(x.toLong())
         while (answer.size != n) {
             answer.add(answer[(answer.size - 1)] + x)
         }
